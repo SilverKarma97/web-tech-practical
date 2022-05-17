@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" async defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+  </head>
+
+  <body>
+    <form action="#" novalidate onsubmit="handleSubmit()" class="form__wrapper">
+      <h2>SURVEY FORM</h2>
+      <div class="tooltip">
+        <label for="Name">Name: </label>
+        <input
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="Enter your name"
+        />
+        <span class="tooltiptext"> Input your name </span>
+      </div>
+      <div class="tooltip">
+        <label for="gender">Gender: </label>
+        <select name="gender" id="gender">
+          <option value="M">Male</option>
+          <option value="G">Female</option>
+        </select>
+        <span class="tooltiptext"> Select Gender </span>
+      </div>
+      <div class="tooltip">
+        <label for="mobile">Mobile Number: </label>
+        <input
+          type="tel"
+          maxlength="10"
+          minlength="10"
+          name="mobile"
+          id="mobile"
+          placeholder="Enter your Contact Number"
+        />
+        <span class="tooltiptext"> Input mobile number </span>
+      </div>
+      <div class="tooltip">
+        <label for="points">How do you rate this website ?</label>
+        <input type="range" id="points" name="points" min="0" max="10" />
+        <span class="tooltiptext"> Rate the website</span>
+      </div>
+      <div>
+        <label class="top">When are you planning to visit Delhi?</label>
+        <input type="date" name="top" id="top" >
+      </div>
+      <div class="container p-5">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
